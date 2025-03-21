@@ -1,0 +1,1354 @@
+{
+    "alerts_list": [
+        {
+            "distinct_values": 1,
+            "distinct_per": "0.0%",
+            "feature_name": "PAYER_NAME",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Constant",
+                    "reason": "PAYER_NAME has constant value 'LongSage'",
+                    "features": [
+                        "PAYER_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 25,
+            "distinct_values": 25,
+            "distinct_per": "0.12%",
+            "feature_name": "PAYER_AREA",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "PAYER_AREA has 25 categories with low frequency",
+                    "features": [
+                        "PAYER_AREA"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "NATIONAL_PAYER_ID",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Constant",
+                    "reason": "NATIONAL_PAYER_ID has constant value '1245319599'",
+                    "features": [
+                        "NATIONAL_PAYER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 11812,
+            "distinct_values": 11812,
+            "distinct_per": "60.08%",
+            "feature_name": "SUBSCRIBER_ID",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "SUBSCRIBER_ID has 11812 (60.08%) distinct values",
+                    "features": [
+                        "SUBSCRIBER_ID"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "SUBSCRIBER_ID has 11812 categories with low frequency",
+                    "features": [
+                        "SUBSCRIBER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "PAYER_PERSON_ID",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "PAYER_PERSON_ID has 19658 (100.0%) missing values",
+                    "features": [
+                        "PAYER_PERSON_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "SUBSCRIBER_OR_DEPENDENT_INDICATOR",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "SUBSCRIBER_OR_DEPENDENT_INDICATOR is highly overall correlated with RELATIONSHIP",
+                    "features": [
+                        "SUBSCRIBER_OR_DEPENDENT_INDICATOR",
+                        "RELATIONSHIP"
+                    ]
+                },
+                {
+                    "label": "Normality",
+                    "reason": "SUBSCRIBER_OR_DEPENDENT_INDICATOR doesn't follow Normal Distribution",
+                    "features": [
+                        "SUBSCRIBER_OR_DEPENDENT_INDICATOR"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "RELATIONSHIP",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "RELATIONSHIP is highly overall correlated with SUBSCRIBER_OR_DEPENDENT_INDICATOR",
+                    "features": [
+                        "RELATIONSHIP",
+                        "SUBSCRIBER_OR_DEPENDENT_INDICATOR"
+                    ]
+                },
+                {
+                    "label": "Normality",
+                    "reason": "RELATIONSHIP doesn't follow Normal Distribution",
+                    "features": [
+                        "RELATIONSHIP"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 19657,
+            "distinct_values": 19657,
+            "distinct_per": "99.99%",
+            "feature_name": "MEMBER_ID",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "MEMBER_ID has 19657 (99.99%) distinct values",
+                    "features": [
+                        "MEMBER_ID"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "MEMBER_ID has 19657 categories with low frequency",
+                    "features": [
+                        "MEMBER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "MEMBER_ID_FAMILY_SEQUENCE_NUMBER",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "MEMBER_ID_FAMILY_SEQUENCE_NUMBER has 19658 (100.0%) missing values",
+                    "features": [
+                        "MEMBER_ID_FAMILY_SEQUENCE_NUMBER"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "PREVIOUS_MEMBER_ID",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "PREVIOUS_MEMBER_ID has 19658 (100.0%) missing values",
+                    "features": [
+                        "PREVIOUS_MEMBER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 804,
+            "distinct_values": 804,
+            "distinct_per": "4.08%",
+            "feature_name": "FIRST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "FIRST_NAME has 804 categories with low frequency",
+                    "features": [
+                        "FIRST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "MIDDLE_NAME",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "MIDDLE_NAME has 19658 (100.0%) missing values",
+                    "features": [
+                        "MIDDLE_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 1000,
+            "distinct_values": 1000,
+            "distinct_per": "5.08%",
+            "feature_name": "LAST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "LAST_NAME has 1000 categories with low frequency",
+                    "features": [
+                        "LAST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "NAME_SUFFIX",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "NAME_SUFFIX has 19658 (100.0%) missing values",
+                    "features": [
+                        "NAME_SUFFIX"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "DOB",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "DOB doesn't follow Normal Distribution",
+                    "features": [
+                        "DOB"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "LAST_4_DIGIT_SSN",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "LAST_4_DIGIT_SSN doesn't follow Normal Distribution",
+                    "features": [
+                        "LAST_4_DIGIT_SSN"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "GENDER",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "GENDER doesn't follow Normal Distribution",
+                    "features": [
+                        "GENDER"
+                    ]
+                }
+            ]
+        },
+        {
+            "skewness_val": 1.17,
+            "outlier_per": "22.52%",
+            "feature_name": "MARITAL_STATUS",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 3,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "MARITAL_STATUS doesn't follow Normal Distribution",
+                    "features": [
+                        "MARITAL_STATUS"
+                    ]
+                },
+                {
+                    "label": "Outlier",
+                    "reason": "MARITAL_STATUS have 22.52% of outliers",
+                    "features": [
+                        "MARITAL_STATUS"
+                    ]
+                },
+                {
+                    "label": "Skewness",
+                    "reason": "MARITAL_STATUS has HIGH RIGHT(1.17) skewness",
+                    "features": [
+                        "MARITAL_STATUS"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 19274,
+            "distinct_values": 19274,
+            "distinct_per": "98.04%",
+            "feature_name": "ADDRESS_LINE_1",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "ADDRESS_LINE_1 has 19274 (98.04%) distinct values",
+                    "features": [
+                        "ADDRESS_LINE_1"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "ADDRESS_LINE_1 has 19274 categories with low frequency",
+                    "features": [
+                        "ADDRESS_LINE_1"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "ADDRESS_LINE_2",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "ADDRESS_LINE_2 has 19658 (100.0%) missing values",
+                    "features": [
+                        "ADDRESS_LINE_2"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 12919,
+            "distinct_values": 12919,
+            "distinct_per": "65.71%",
+            "feature_name": "CITY",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "CITY has 12919 (65.71%) distinct values",
+                    "features": [
+                        "CITY"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "CITY has 12919 categories with low frequency",
+                    "features": [
+                        "CITY"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 50,
+            "distinct_values": 50,
+            "distinct_per": "0.25%",
+            "feature_name": "STATE",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "STATE has 50 categories with low frequency",
+                    "features": [
+                        "STATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "COUNTRY",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "COUNTRY has 19658 (100.0%) missing values",
+                    "features": [
+                        "COUNTRY"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "ZIP_CODE",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "ZIP_CODE doesn't follow Normal Distribution",
+                    "features": [
+                        "ZIP_CODE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "PHONE_NUMBER_1",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "PHONE_NUMBER_1 is highly overall correlated with COB_CLASSIFICATION_INDICATOR",
+                    "features": [
+                        "PHONE_NUMBER_1",
+                        "COB_CLASSIFICATION_INDICATOR"
+                    ]
+                },
+                {
+                    "label": "Normality",
+                    "reason": "PHONE_NUMBER_1 doesn't follow Normal Distribution",
+                    "features": [
+                        "PHONE_NUMBER_1"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "PHONE_NUMBER_2",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "PHONE_NUMBER_2 has 19658 (100.0%) missing values",
+                    "features": [
+                        "PHONE_NUMBER_2"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 19180,
+            "distinct_values": 19180,
+            "distinct_per": "97.56%",
+            "feature_name": "EMAIL_ADDRESS",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "EMAIL_ADDRESS has 19180 (97.56%) distinct values",
+                    "features": [
+                        "EMAIL_ADDRESS"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "EMAIL_ADDRESS has 19180 categories with low frequency",
+                    "features": [
+                        "EMAIL_ADDRESS"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 5,
+            "distinct_values": 7,
+            "distinct_per": "0.03%",
+            "feature_name": "GROUP_NUMBER",
+            "data_type": "Categorical",
+            "missing_values": 1690,
+            "missing_per": "8.59%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "GROUP_NUMBER has 5 categories with low frequency",
+                    "features": [
+                        "GROUP_NUMBER"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 5,
+            "distinct_values": 7,
+            "distinct_per": "0.03%",
+            "feature_name": "GROUP_NAME",
+            "data_type": "Categorical",
+            "missing_values": 1690,
+            "missing_per": "8.59%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "GROUP_NAME has 5 categories with low frequency",
+                    "features": [
+                        "GROUP_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 10881,
+            "distinct_values": 10881,
+            "distinct_per": "81.21%",
+            "feature_name": "EMPLOYER_NAME",
+            "data_type": "Categorical",
+            "missing_values": 6260,
+            "missing_per": "31.84%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "EMPLOYER_NAME has 10882 (55.35%) distinct values",
+                    "features": [
+                        "EMPLOYER_NAME"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "EMPLOYER_NAME has 10881 categories with low frequency",
+                    "features": [
+                        "EMPLOYER_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EMPLOYER_SIZE",
+            "data_type": "Numerical",
+            "missing_values": 6589,
+            "missing_per": "33.51%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "BUSINESS_MODEL",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "BUSINESS_MODEL doesn't follow Normal Distribution",
+                    "features": [
+                        "BUSINESS_MODEL"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "REASON_FOR_MEDICARE_ENTITLEMENT",
+            "data_type": "Numerical",
+            "missing_values": 9268,
+            "missing_per": "47.14%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "less_frequency_count": 5,
+            "distinct_values": 10,
+            "distinct_per": "0.05%",
+            "feature_name": "COVERAGE_TYPE",
+            "data_type": "Categorical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "Mixed Datatype",
+                    "reason": "COVERAGE_TYPE contains mixed data type",
+                    "features": [
+                        "COVERAGE_TYPE"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "COVERAGE_TYPE has 5 categories with low frequency",
+                    "features": [
+                        "COVERAGE_TYPE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "FUNDING_MODEL",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Normality",
+                    "reason": "FUNDING_MODEL doesn't follow Normal Distribution",
+                    "features": [
+                        "FUNDING_MODEL"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EMPLOYMENT_STATUS",
+            "data_type": "Numerical",
+            "missing_values": 14812,
+            "missing_per": "75.34%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "COBRA_START_DATE",
+            "data_type": "Numerical",
+            "missing_values": 18205,
+            "missing_per": "92.6%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "COBRA_START_DATE has 18205 (92.6%) missing values",
+                    "features": [
+                        "COBRA_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "COBRA_END_DATE",
+            "data_type": "Numerical",
+            "missing_values": 18205,
+            "missing_per": "92.6%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "COBRA_END_DATE has 18205 (92.6%) missing values",
+                    "features": [
+                        "COBRA_END_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "NOT_SUBJECT_TO_COB_INDICATOR",
+            "data_type": "Numerical",
+            "missing_values": 14255,
+            "missing_per": "72.51%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "NOT_SUBJECT_TO_COB_INDICATOR is highly overall correlated with COB_CLASSIFICATION_INDICATOR",
+                    "features": [
+                        "NOT_SUBJECT_TO_COB_INDICATOR",
+                        "COB_CLASSIFICATION_INDICATOR"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "NOT_SUBJECT_TO_COB_REASON",
+            "data_type": "Numerical",
+            "missing_values": 16658,
+            "missing_per": "84.73%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "NOT_SUBJECT_TO_COB_REASON has 16658 (84.73%) missing values",
+                    "features": [
+                        "NOT_SUBJECT_TO_COB_REASON"
+                    ]
+                }
+            ]
+        },
+        {
+            "outlier_per": "3.36%",
+            "feature_name": "INITIAL_COVERAGE_DATE",
+            "data_type": "Numerical",
+            "missing_values": 41,
+            "missing_per": "0.2%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Outlier",
+                    "reason": "INITIAL_COVERAGE_DATE have 3.36% of outliers",
+                    "features": [
+                        "INITIAL_COVERAGE_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "outlier_per": "24.08%",
+            "feature_name": "CURRENT_COVERAGE_START_DATE",
+            "data_type": "Numerical",
+            "missing_values": 41,
+            "missing_per": "0.2%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "CURRENT_COVERAGE_START_DATE is highly overall correlated with COVERAGE_EXPIRED_DATE",
+                    "features": [
+                        "CURRENT_COVERAGE_START_DATE",
+                        "COVERAGE_EXPIRED_DATE"
+                    ]
+                },
+                {
+                    "label": "Outlier",
+                    "reason": "CURRENT_COVERAGE_START_DATE have 24.08% of outliers",
+                    "features": [
+                        "CURRENT_COVERAGE_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "COVERAGE_EXPIRED_DATE",
+            "data_type": "Numerical",
+            "missing_values": 41,
+            "missing_per": "0.2%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "COVERAGE_EXPIRED_DATE is highly overall correlated with CURRENT_COVERAGE_START_DATE",
+                    "features": [
+                        "COVERAGE_EXPIRED_DATE",
+                        "CURRENT_COVERAGE_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "outlier_per": "22.75%",
+            "feature_name": "ESRD_COORDINATION_PERIOD_START_DATE",
+            "data_type": "Numerical",
+            "missing_values": 14907,
+            "missing_per": "75.83%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "ESRD_COORDINATION_PERIOD_START_DATE is highly overall correlated with ESRD_COORDINATION_PERIOD_END_DATE",
+                    "features": [
+                        "ESRD_COORDINATION_PERIOD_START_DATE",
+                        "ESRD_COORDINATION_PERIOD_END_DATE"
+                    ]
+                },
+                {
+                    "label": "Outlier",
+                    "reason": "ESRD_COORDINATION_PERIOD_START_DATE have 22.75% of outliers",
+                    "features": [
+                        "ESRD_COORDINATION_PERIOD_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "outlier_per": "22.75%",
+            "feature_name": "ESRD_COORDINATION_PERIOD_END_DATE",
+            "data_type": "Numerical",
+            "missing_values": 14907,
+            "missing_per": "75.83%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "ESRD_COORDINATION_PERIOD_END_DATE is highly overall correlated with ESRD_COORDINATION_PERIOD_START_DATE",
+                    "features": [
+                        "ESRD_COORDINATION_PERIOD_END_DATE",
+                        "ESRD_COORDINATION_PERIOD_START_DATE"
+                    ]
+                },
+                {
+                    "label": "Outlier",
+                    "reason": "ESRD_COORDINATION_PERIOD_END_DATE have 22.75% of outliers",
+                    "features": [
+                        "ESRD_COORDINATION_PERIOD_END_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "distinct_values": 6,
+            "distinct_per": "0.04%",
+            "feature_name": "EXISTING_COB_PAYER_NAME",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "EXISTING_COB_NATIONAL_PAYER_ID",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "EXISTING_COB_NATIONAL_PAYER_ID has 19658 (100.0%) missing values",
+                    "features": [
+                        "EXISTING_COB_NATIONAL_PAYER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 14724,
+            "distinct_values": 14724,
+            "distinct_per": "99.96%",
+            "feature_name": "EXISTING_COB_SUBSCRIBER_ID",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "EXISTING_COB_SUBSCRIBER_ID has 14725 (74.9%) distinct values",
+                    "features": [
+                        "EXISTING_COB_SUBSCRIBER_ID"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_SUBSCRIBER_ID has 14724 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_SUBSCRIBER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 754,
+            "distinct_values": 754,
+            "distinct_per": "5.11%",
+            "feature_name": "EXISTING_COB_SUBSCRIBER_FIRST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_SUBSCRIBER_FIRST_NAME has 754 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_SUBSCRIBER_FIRST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 998,
+            "distinct_values": 998,
+            "distinct_per": "6.77%",
+            "feature_name": "EXISTING_COB_SUBSCRIBER_LAST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_SUBSCRIBER_LAST_NAME has 998 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_SUBSCRIBER_LAST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_SUBSCRIBER_DOB",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "EXISTING_COB_SUBSCRIBER_EMPLOYMENT_STATUS",
+            "data_type": "Numerical",
+            "missing_values": 10554,
+            "missing_per": "53.68%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "EXISTING_COB_RELATIONSHIP",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "less_frequency_count": 14724,
+            "distinct_values": 14724,
+            "distinct_per": "99.96%",
+            "feature_name": "EXISTING_COB_MEMBER_ID",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Distinct",
+                    "reason": "EXISTING_COB_MEMBER_ID has 14725 (74.9%) distinct values",
+                    "features": [
+                        "EXISTING_COB_MEMBER_ID"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_MEMBER_ID has 14724 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_MEMBER_ID"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_FAMILY_SEQUENCE_NUMBER",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "EXISTING_COB_FAMILY_SEQUENCE_NUMBER has 19658 (100.0%) missing values",
+                    "features": [
+                        "EXISTING_COB_FAMILY_SEQUENCE_NUMBER"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 801,
+            "distinct_values": 801,
+            "distinct_per": "5.43%",
+            "feature_name": "EXISTING_COB_FIRST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_FIRST_NAME has 801 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_FIRST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 999,
+            "distinct_values": 999,
+            "distinct_per": "6.78%",
+            "feature_name": "EXISTING_COB_LAST_NAME",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_LAST_NAME has 999 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_LAST_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_DOB",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "less_frequency_count": 5,
+            "distinct_values": 7,
+            "distinct_per": "0.04%",
+            "feature_name": "EXISTING_COB_GROUP_NAME",
+            "data_type": "Categorical",
+            "missing_values": 5054,
+            "missing_per": "25.7%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_GROUP_NAME has 5 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_GROUP_NAME"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_MEMBER_EMPLOYMENT_STATUS",
+            "data_type": "Numerical",
+            "missing_values": 13636,
+            "missing_per": "69.36%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "EXISTING_COB_BUSINESS_MODEL",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "less_frequency_count": 5,
+            "distinct_values": 10,
+            "distinct_per": "0.06%",
+            "feature_name": "EXISTING_COB_COVERAGE_TYPE",
+            "data_type": "Categorical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "Mixed Datatype",
+                    "reason": "EXISTING_COB_COVERAGE_TYPE contains mixed data type",
+                    "features": [
+                        "EXISTING_COB_COVERAGE_TYPE"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "EXISTING_COB_COVERAGE_TYPE has 5 categories with low frequency",
+                    "features": [
+                        "EXISTING_COB_COVERAGE_TYPE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_INITIAL_COVERAGE_DATE",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "outlier_per": "24.25%",
+            "feature_name": "EXISTING_COB_CURRENT_COVERAGE_START_DATE",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "EXISTING_COB_CURRENT_COVERAGE_START_DATE is highly overall correlated with EXISTING_COB_COVERAGE_EXPIRED_DATE",
+                    "features": [
+                        "EXISTING_COB_CURRENT_COVERAGE_START_DATE",
+                        "EXISTING_COB_COVERAGE_EXPIRED_DATE"
+                    ]
+                },
+                {
+                    "label": "Outlier",
+                    "reason": "EXISTING_COB_CURRENT_COVERAGE_START_DATE have 24.25% of outliers",
+                    "features": [
+                        "EXISTING_COB_CURRENT_COVERAGE_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_COVERAGE_EXPIRED_DATE",
+            "data_type": "Numerical",
+            "missing_values": 4929,
+            "missing_per": "25.07%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "EXISTING_COB_COVERAGE_EXPIRED_DATE is highly overall correlated with EXISTING_COB_CURRENT_COVERAGE_START_DATE",
+                    "features": [
+                        "EXISTING_COB_COVERAGE_EXPIRED_DATE",
+                        "EXISTING_COB_CURRENT_COVERAGE_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 50,
+            "distinct_values": 50,
+            "distinct_per": "0.34%",
+            "feature_name": "COB_STATE",
+            "data_type": "Categorical",
+            "missing_values": 5120,
+            "missing_per": "26.04%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Less Frequency",
+                    "reason": "COB_STATE has 50 categories with low frequency",
+                    "features": [
+                        "COB_STATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "outlier_per": "5.96%",
+            "feature_name": "COVERAGE_OVERLAP_START_DATE",
+            "data_type": "Numerical",
+            "missing_values": 5184,
+            "missing_per": "26.37%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Outlier",
+                    "reason": "COVERAGE_OVERLAP_START_DATE have 5.96% of outliers",
+                    "features": [
+                        "COVERAGE_OVERLAP_START_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "COVERAGE_OVERLAP_END_DATE",
+            "data_type": "Numerical",
+            "missing_values": 5184,
+            "missing_per": "26.37%",
+            "no_of_alerts": 0,
+            "alerts": []
+        },
+        {
+            "feature_name": "EXISTING_COB_VERIFY_DATE",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "EXISTING_COB_VERIFY_DATE has 19658 (100.0%) missing values",
+                    "features": [
+                        "EXISTING_COB_VERIFY_DATE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_INDICATOR",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "EXISTING_COB_INDICATOR has 19658 (100.0%) missing values",
+                    "features": [
+                        "EXISTING_COB_INDICATOR"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "EXISTING_COB_CODE",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "EXISTING_COB_CODE has 19658 (100.0%) missing values",
+                    "features": [
+                        "EXISTING_COB_CODE"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "COB_CLASSIFICATION_INDICATOR",
+            "data_type": "Numerical",
+            "missing_values": 0,
+            "missing_per": "0.0%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "High Correlation",
+                    "reason": "COB_CLASSIFICATION_INDICATOR is highly overall correlated with PHONE_NUMBER_1",
+                    "features": [
+                        "COB_CLASSIFICATION_INDICATOR",
+                        "PHONE_NUMBER_1",
+                        "NOT_SUBJECT_TO_COB_INDICATOR"
+                    ]
+                },
+                {
+                    "label": "Normality",
+                    "reason": "COB_CLASSIFICATION_INDICATOR doesn't follow Normal Distribution",
+                    "features": [
+                        "COB_CLASSIFICATION_INDICATOR"
+                    ]
+                }
+            ]
+        },
+        {
+            "feature_name": "PAYER_PRIMACY",
+            "data_type": "Numerical",
+            "missing_values": 19658,
+            "missing_per": "100.0%",
+            "no_of_alerts": 1,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "PAYER_PRIMACY has 19658 (100.0%) missing values",
+                    "features": [
+                        "PAYER_PRIMACY"
+                    ]
+                }
+            ]
+        },
+        {
+            "less_frequency_count": 1,
+            "distinct_values": 1,
+            "distinct_per": "100.0%",
+            "feature_name": "PRIMACY_DETERMINATION_CODE",
+            "data_type": "Categorical",
+            "missing_values": 19657,
+            "missing_per": "99.99%",
+            "no_of_alerts": 2,
+            "alerts": [
+                {
+                    "label": "Missing",
+                    "reason": "PRIMACY_DETERMINATION_CODE has 19657 (99.99%) missing values",
+                    "features": [
+                        "PRIMACY_DETERMINATION_CODE"
+                    ]
+                },
+                {
+                    "label": "Less Frequency",
+                    "reason": "PRIMACY_DETERMINATION_CODE has 1 categories with low frequency",
+                    "features": [
+                        "PRIMACY_DETERMINATION_CODE"
+                    ]
+                }
+            ]
+        }
+    ],
+    "data_quality": {
+        "data_quality_score": 0.8,
+        "data_quality_label": "Good",
+        "data_quality_threshold": {
+            "Poor": [
+                0,
+                40
+            ],
+            "Average": [
+                41,
+                60
+            ],
+            "Good": [
+                61,
+                80
+            ],
+            "Excellent": [
+                81,
+                100
+            ]
+        }
+    }
+}
